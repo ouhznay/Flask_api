@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)  
 
-@app.route('/api/modules/', methods= ['GET'])
+@app.route('/', methods= ['GET'])
 def get_modules():
     modules = [
         {'name': 'BT1101', 'details': "Last Week's Content Review: 2 hours, This Week's Content Review: 2 hours, Tutorial: 2 hours, Lecture: 3 hours, Lab: 2 hours"},
